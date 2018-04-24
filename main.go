@@ -21,6 +21,8 @@ func main() {
 			fmt.Printf("A: \"%v\", \"%v\"\n", t.Hdr.Name, t.A)
 		case *dns.CNAME:
 			fmt.Printf("CNAME: \"%v\", \"%v\"\n", t.Hdr.Name, t.Target)
+		case *dns.TXT:
+			fmt.Printf("TXT: \"%v\", \"%v\"\n", t.Hdr.Name, t.Txt)
 		default:
 			// NOOP
 		}
