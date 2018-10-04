@@ -1,0 +1,6 @@
+vpc: "<VPC ID>"
+region: "<AWS REGION>"
+events:
+  - schedule:
+      rate: rate(5 minutes)
+      enabled: false
