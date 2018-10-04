@@ -2,49 +2,110 @@
 
 
 [[projects]]
+  digest = "1:ff61b1cc37735f21fdcfc1674ece799a767b0fe552e9b6e2bc16f76d750227b6"
   name = "github.com/aws/aws-lambda-go"
-  packages = ["lambda","lambda/messages","lambdacontext"]
+  packages = [
+    "lambda",
+    "lambda/messages",
+    "lambdacontext",
+  ]
+  pruneopts = ""
   revision = "fafa7e49388b8991caf99308e80655ba91816b72"
   version = "v1.1.0"
 
 [[projects]]
+  digest = "1:de3d646919ea14a7b65ea7c56b42e89e4eafe0105e1936c5eceffb82122a7487"
   name = "github.com/aws/aws-sdk-go"
-  packages = ["aws","aws/awserr","aws/awsutil","aws/client","aws/client/metadata","aws/corehandlers","aws/credentials","aws/credentials/ec2rolecreds","aws/credentials/endpointcreds","aws/credentials/stscreds","aws/defaults","aws/ec2metadata","aws/endpoints","aws/request","aws/session","aws/signer/v4","internal/sdkio","internal/sdkrand","internal/shareddefaults","private/protocol","private/protocol/query","private/protocol/query/queryutil","private/protocol/rest","private/protocol/restxml","private/protocol/xml/xmlutil","service/route53","service/sts"]
+  packages = [
+    "aws",
+    "aws/awserr",
+    "aws/awsutil",
+    "aws/client",
+    "aws/client/metadata",
+    "aws/corehandlers",
+    "aws/credentials",
+    "aws/credentials/ec2rolecreds",
+    "aws/credentials/endpointcreds",
+    "aws/credentials/stscreds",
+    "aws/defaults",
+    "aws/ec2metadata",
+    "aws/endpoints",
+    "aws/request",
+    "aws/session",
+    "aws/signer/v4",
+    "internal/sdkio",
+    "internal/sdkrand",
+    "internal/shareddefaults",
+    "private/protocol",
+    "private/protocol/query",
+    "private/protocol/query/queryutil",
+    "private/protocol/rest",
+    "private/protocol/restxml",
+    "private/protocol/xml/xmlutil",
+    "service/route53",
+    "service/sts",
+  ]
+  pruneopts = ""
   revision = "64aa9485bf77b8a811e88e95060a4a049bb373fb"
   version = "v1.13.37"
 
 [[projects]]
+  digest = "1:f6d8770900622a855dbeda0aaefb536ad97bc30315e6647a02c4e2044f4a858f"
   name = "github.com/go-ini/ini"
   packages = ["."]
+  pruneopts = ""
   revision = "6529cf7c58879c08d927016dde4477f18a0634cb"
   version = "v1.36.0"
 
 [[projects]]
+  digest = "1:6f49eae0c1e5dab1dafafee34b207aeb7a42303105960944828c2079b92fc88e"
   name = "github.com/jmespath/go-jmespath"
   packages = ["."]
+  pruneopts = ""
   revision = "0b12d6b5"
 
 [[projects]]
+  digest = "1:4e1406b4eb2fab0bd64f9a3534e626009cb3490e0fc11839f50882261397be04"
   name = "github.com/miekg/dns"
   packages = ["."]
+  pruneopts = ""
   revision = "83c435cc65d2862736428b9b4d07d0ab10ad3e4d"
   version = "v1.0.5"
 
 [[projects]]
   branch = "master"
+  digest = "1:3b177c54651c51def0bccdfbdf01dd3a3ac99f66b7dc1c1d8f081fdd3afb36a7"
   name = "golang.org/x/crypto"
-  packages = ["ed25519","ed25519/internal/edwards25519"]
+  packages = [
+    "ed25519",
+    "ed25519/internal/edwards25519",
+  ]
+  pruneopts = ""
   revision = "2b6c08872f4b66da917bb4ce98df4f0307330f78"
 
 [[projects]]
   branch = "master"
+  digest = "1:80ec738f420f13c23460cc92cd893d3e403588c60682afebbd4515eca5e19578"
   name = "golang.org/x/net"
-  packages = ["bpf","internal/iana","internal/socket","ipv4","ipv6"]
+  packages = [
+    "bpf",
+    "internal/iana",
+    "internal/socket",
+    "ipv4",
+    "ipv6",
+  ]
+  pruneopts = ""
   revision = "5f9ae10d9af5b1c89ae6904293b14b064d4ada23"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "6ebc84323bbccbb5b3c9cc31e2cf2973e3e085e944fb678deb8272c803cc3a6b"
+  input-imports = [
+    "github.com/aws/aws-lambda-go/lambda",
+    "github.com/aws/aws-sdk-go/aws",
+    "github.com/aws/aws-sdk-go/aws/session",
+    "github.com/aws/aws-sdk-go/service/route53",
+    "github.com/miekg/dns",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1
