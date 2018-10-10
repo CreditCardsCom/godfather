@@ -2,15 +2,15 @@ package main
 
 import (
 	"fmt"
-	"log"
-	"strings"
-	"sync"
-	"time"
 	"github.com/aws/aws-lambda-go/lambda"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/route53"
 	"github.com/miekg/dns"
+	"log"
+	"strings"
+	"sync"
+	"time"
 )
 
 func main() {
